@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokémon Battle Arena</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Pokémon Battle Arena</h1>
+        <p>Choose two Pokémon and start the battle!</p>
+    </header>
+
+    <main>
+
+        <section class="arena">
+
+            <!-- PLAYER 1 -->
+            <article class="fighter">
+
+                <h2>Fighter 1</h2>
+
+                <label for="search1">Search Pokémon</label>
+
+                <input
+                    type="text"
+                    id="search1"
+                    placeholder="Example: Pikachu"
+                    autocomplete="off"
+                >
+
+                <div id="suggestions1" class="suggestions"></div>
+
+                <div id="pokemon1" class="pokemon-card">
+                    <p>Choose a Pokémon</p>
+                </div>
+
+            </article>
+
+
+            <!-- PLAYER 2 -->
+            <article class="fighter">
+
+                <h2>Fighter 2</h2>
+
+                <label for="search2">Search Pokémon</label>
+
+                <input
+                    type="text"
+                    id="search2"
+                    placeholder="Example: Charmander"
+                    autocomplete="off"
+                >
+
+                <div id="suggestions2" class="suggestions"></div>
+
+                <div id="pokemon2" class="pokemon-card">
+                    <p>Choose a Pokémon</p>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section id="battle-message">
+            <p>Select two Pokémon to start the battle.</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
